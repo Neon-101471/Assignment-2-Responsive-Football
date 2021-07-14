@@ -26,8 +26,6 @@ body{
 .player-section{
     display: flex;
     justify-content: center;
-    margin: 0px 0px;
-    border: 1px solid red;
 }
 
 .players{
@@ -60,11 +58,11 @@ body{
 /* Highlights styles */
 
 .highlights-section{
-    margin: 0px 50px;
-    border: 2px solid lightsalmon;
+    margin: 125px 50px 158px 50px;
 }
 
 .highlights{
+    height: 427px;
     display: flex;
     justify-content: center;
 }
@@ -72,12 +70,19 @@ body{
 .highlight-details{
     height: 309px;
     width: 466px;
-    border: 1px solid black;
+    margin-top: 58px;
 }
 
 .highlight-litle{
+    margin: 0px;
     font-size: 48px;
     font-weight: 700;
+    color: #0A0826;
+}
+
+.highlight-details p{
+    margin: 0px 0px;
+    margin-bottom: 22px;
 }
 
 .highlight-button{
@@ -89,6 +94,15 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.highlight-button #watch-now{
+    margin-left: 15px;
+}
+
+.highlight-button #arrow{
+    margin-right: 15px;
+    margin-left: 0px;
 }
 
 .highlight-img img{
