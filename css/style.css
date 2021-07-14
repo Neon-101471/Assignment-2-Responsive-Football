@@ -196,7 +196,7 @@ body{
     margin-top: 58px;
 }
 
-.highlight-litle{
+.highlight-title{
     margin: 0px;
     font-size: 48px;
     font-weight: 700;
@@ -272,4 +272,58 @@ body{
 #copyright-area{
     height: 30px;
     font-size: 18px;
+}
+
+/**** Media query style section ****/
+
+@media only screen and (max-width: 688px){
+
+    .header-section{
+        height: 250px;
+    }
+    #heading-title p{
+        font-size: 35px;
+        margin-left: 0px;
+    }
+
+    .header-area, .players, .highlights{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #header-left{
+        width: 100%;
+        height: 301px;
+        padding: 15px 15px 15px 15px;
+    }
+        
+
+    .highlight-details, .highlight-img img{
+        width: 90%;
+        height: 700px;
+    }
+    #header-right, .highlight-details, .footer-area{
+        width: 100%;
+        height: 480px;
+    }
+
+
+    .highlight-img img{
+        margin-top: 50px;
+        margin-left: 0px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .footer-area{
+        margin-top: 250px;
+    }
+
+    .logo-area img{
+        width: 90%;
+    }
+
+    .menu-left, .header-area img, .menu-bar{
+        display: none;
+    }
 }
