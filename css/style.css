@@ -110,3 +110,59 @@ body{
     height: 427px;
     margin-left: 69px;
 }
+
+/* Footer sytles */
+
+.footer-section{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-area{
+    width: 484px;
+    height: 213px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-area{
+    width: 484px;
+    height: 110px;
+}
+
+.logo-area img{
+    height: 110px;
+    width: 480px;
+}
+
+.social-links-area{
+    height: 32px;
+    width: 170px;
+    margin: 20px 157px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.social-links-area a{
+    text-decoration: none;
+    color: lightslategray;
+}
+
+.social-links-area a .s-link{
+    height: 32px;
+    width: 32px;
+    background-color: rgb(223, 220, 220);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright-area{
+    height: 30px;
+    font-size: 18px;
+}
