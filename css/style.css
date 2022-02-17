@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
 /**** Common styles or utilities ****/
-
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -17,6 +15,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    border-radius: 6px;
 }
 
 .watch-button a{
@@ -39,7 +38,6 @@ body{
 }
 
 /**** Header styles ****/
-
 .header-section{
     width: 100%;
     height: 600px;
@@ -102,6 +100,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 6px;
 }
 
 .header-area{
@@ -137,10 +136,10 @@ body{
 
 #header-right:hover{
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    transition: transform 0.8s ease-in-out;
 }
 
 /**** Players styles ****/
-
 .player-section{
     display: flex;
     justify-content: center;
@@ -152,18 +151,33 @@ body{
 }
 
 .player{
+    background-color: #FFFFFF;
     width: 300px;
     height: 426px;
+    border-radius: 7px;
     padding: 15px 15px 40px 15px;
         /* The figma measurement padding-bottom is 33px, but i'm using 40px for better experience. */
     margin: 0px 15px 45px 15px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    background-color: #FFFFFF;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.player-img-container {
+    height: 256px;
+    overflow: hidden;
+    overflow-y: hidden;
+    border-radius: 5px;
 }
 
 .player img{
     height: 256px;
     width: 300px;
+    border-radius: 5px;
+}
+
+.player img:hover {
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+    opacity: 0.95;
 }
 
 .player-name{
@@ -177,9 +191,7 @@ body{
     color: lightslategrey;
 }
 
-
 /**** Highlights styles ****/
-
 .highlights-section{
     margin: 125px 50px 158px 50px;
 }
@@ -215,7 +227,6 @@ body{
 }
 
 /**** Footer sytles ****/
-
 .footer-section{
     display: flex;
     justify-content: center;
@@ -275,7 +286,6 @@ body{
 }
 
 /**** Media query style section ****/
-
 @media only screen and (max-width: 688px){
 
     .header-section{
