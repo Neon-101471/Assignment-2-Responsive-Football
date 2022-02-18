@@ -6,6 +6,13 @@ body{
     margin: 0px;
 }
 
+.section-title {
+    text-align: center;
+    padding: 5px;
+    font-size: 40px;
+    color: #0A0826;
+}
+
 .watch-button{
     width: 173px;
     height: 44px;
@@ -152,12 +159,15 @@ body{
 
 .player{
     background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     width: 300px;
-    height: 426px;
+    height: 410px;
     border-radius: 7px;
-    padding: 15px 15px 40px 15px;
+    padding: 20px 15px 10px 15px;
         /* The figma measurement padding-bottom is 33px, but i'm using 40px for better experience. */
-    margin: 0px 15px 45px 15px;
+    margin: 0px 10px 45px 10px;
     box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -191,21 +201,36 @@ body{
     color: lightslategrey;
 }
 
+.player-info p {
+    text-align: justify;
+}
+
 /**** Highlights styles ****/
 .highlights-section{
-    margin: 125px 50px 158px 50px;
+    margin: 50px 125px 100px 125px;
 }
 
 .highlights{
-    height: 427px;
+    height: 430px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .highlight-details{
-    height: 309px;
+    height: 310px;
     width: 466px;
-    margin-top: 58px;
+    /* margin-top: 58px; */
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px lightgray;
+}
+
+.highlights-section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: #0A0826;
 }
 
 .highlight-title{
@@ -218,12 +243,15 @@ body{
 .highlight-details p{
     margin: 0px 0px;
     margin-bottom: 22px;
+    text-align: justify;
 }
 
 .highlight-img img{
+    margin-top: 8px;
     width: 567px;
-    height: 427px;
-    margin-left: 69px;
+    height: 430px;
+    /* margin-left: 69px; */
+    border-radius: 10px;
 }
 
 /**** Footer sytles ****/
@@ -249,7 +277,7 @@ body{
 
 .logo-area img{
     height: 110px;
-    width: 480px;
+    width: 425px;
 }
 
 .social-links-area{
@@ -267,9 +295,10 @@ body{
 }
 
 .social-links-area a .s-link{
-    height: 32px;
-    width: 32px;
-    background-color: rgb(223, 220, 220);
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    background-color: rgb(206, 205, 205);
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -281,8 +310,11 @@ body{
 }
 
 #copyright-area{
-    height: 30px;
-    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    /* font-size: 18px; */
+    background-color: #2D25A0;
+    color: white;
 }
 
 /**** Media query style section ****/
