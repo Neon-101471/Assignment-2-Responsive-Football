@@ -45,17 +45,17 @@ body{
 }
 
 /**** Header styles ****/
-.header-section{
+.header-section {
     width: 100%;
-    height: 600px;
+    padding-bottom: 25px;
     background-color: #2D25A0;
-    margin-bottom: 30px;
 
-    /****
-    Figma value is given below:
-    width: 1440px;
-    height: 677px;
-    ****/
+        /****
+        Figma value is given below:
+        width: 1440px;
+        height: 677px;
+        ****/
+    padding-top: 5px;
 }
 
 .menu-bar{
@@ -110,18 +110,19 @@ body{
     border-radius: 6px;
 }
 
-.header-area{
+.header-body {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#header-left{
-    width: 490px;
-    height: 301px;
-    padding: 45px 39px 0px 155px;
+.header-description {
+    width: 410px;
+    padding-bottom: 10px;
 }
 
-#heading-title p{
-    font-size: 64px;
+.heading-title {
+    font-size: 55px;
     font-weight: 700;
     color: white;
     margin: 0px;
@@ -129,21 +130,13 @@ body{
     padding-bottom: 5px;
 }
 
-#header-right{
-    width: 556px;
-    height: 438px;
-    margin-right: 125px;
-    margin-left: 40px;
+.header-image img {
+    width: 410px;
 }
 
-#header-right img{
-    height: 438px;
-    width: 556px;
-}
-
-#header-right:hover{
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    transition: transform 0.8s ease-in-out;
+.header-image img:hover {
+    transform: rotate(360deg);
+    transition: transform 1.5s ease-in-out;
 }
 
 /**** Players styles ****/
@@ -220,7 +213,6 @@ body{
 .highlight-details{
     height: 310px;
     width: 466px;
-    /* margin-top: 58px; */
     padding: 60px;
     border-radius: 10px;
     box-shadow: 5px 5px 30px lightgray;
@@ -250,7 +242,6 @@ body{
     margin-top: 8px;
     width: 567px;
     height: 430px;
-    /* margin-left: 69px; */
     border-radius: 10px;
 }
 
@@ -271,13 +262,13 @@ body{
 }
 
 .logo-area{
-    width: 484px;
-    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-area img{
-    height: 110px;
-    width: 425px;
+    width: 200px;
 }
 
 .social-links-area{
@@ -312,34 +303,26 @@ body{
 #copyright-area{
     line-height: 60px;
     text-align: center;
-    /* font-size: 18px; */
     background-color: #2D25A0;
     color: white;
 }
 
 /**** Media query style section ****/
 @media only screen and (max-width: 688px){
-
-    .header-section{
-        height: 250px;
-    }
-    #heading-title p{
-        font-size: 35px;
-        margin-left: 0px;
+    .header-body {
+        display: flex;
+        flex-direction: column;
     }
 
-    .header-area, .players, .highlights{
+    .menu-bar {
+        display: none;
+    }
+
+    .players, .highlights{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
-    #header-left{
-        width: 100%;
-        height: 301px;
-        padding: 15px 15px 15px 15px;
-    }
         
-
     .highlight-details, .highlight-img img{
         width: 90%;
         height: 700px;
@@ -348,7 +331,6 @@ body{
         width: 100%;
         height: 480px;
     }
-
 
     .highlight-img img{
         margin-top: 50px;
@@ -362,10 +344,10 @@ body{
     }
 
     .logo-area img{
-        width: 90%;
+        width: 100%;
     }
 
-    .menu-left, .header-area img, .menu-bar{
+    .highlights {
         display: none;
     }
 }
